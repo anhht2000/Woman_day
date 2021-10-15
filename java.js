@@ -147,13 +147,13 @@ const app = {
     audio.onloadedmetadata = function () {
       timeTotal.innerText = Math.round((audio.duration / 60) * 100) / 100;
       progress.value = 0;
-      timechange.innerText = 0;
+      timechange.innerText = "0.00";
     };
     audio.ontimeupdate = () => {
       // console.log(audio);
       //xu ly totalTIme
       progress.value = (audio.currentTime / audio.duration) * 100;
-      timechange.innerText = Math.round((audio.currentTime / 60) * 100) / 100;
+      timechange.innerText = `${String(Math.round((audio.currentTime / 60) * 100) / 100)}0`.slice(0, 4);
     };
     //xu ly khi tua song
     progress.onchange = (event) => {
