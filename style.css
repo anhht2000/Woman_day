@@ -1,3 +1,6 @@
+:root {
+  --animate-delay: 1s;
+}
 #img__footer {
   text-align: center;
 }

@@ -1,6 +1,27 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+const listAnimation = [
+  "animate__bounceInRight",
+  "animate__bounceInLeft",
+  "animate__backInUp",
+  "animate__backInRight",
+  "animate__backInLeft",
+  "animate__backInLeft",
+  "animate__heartBeat",
+  "animate__wobble",
+  "animate__swing",
+];
+
+const animation = $$("figure");
+animation.forEach((e) => {
+  e.classList.add("animate__animated");
+  e.classList.add(`${listAnimation[Math.floor(Math.random() * listAnimation.length)]}`);
+  e.classList.add("animate__delay-2s");
+  e.classList.add("animate__slow");
+  // e.classList.add("animate__repeat-2");
+});
+
 const PLAYER_STORAGE_KEY = "TA_player";
 
 const header = $("header h2");
