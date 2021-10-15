@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Love Yourself</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./images/logo02.png" type="image/png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<body>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-center" style="max-width: 1500px">
+    <img class="w3-image" src="images/4.jpg" alt="Me" width="1500" height="600" />
+    <div
+      class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center width__ne">
+      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Hà Tú Linh</h1>
+      <!-- <h5 class="w3-hide-large" style="white-space: nowrap">Hà Tú Linh</h5> -->
+      <div class="w3-hide-medium w3-hide-small">
+        <header>
+          <h4>Now playing:</h4>
+          <h2>String 57th & 9th</h2>
+        </header>
+        <div class="control">
+          <div class="btn btn-prev">
+            <i class="fa fa-step-backward"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <!-- <i class="fa fa-pause icon-pause"></i> -->
+            <i class="fa fa-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fa fa-step-forward"></i>
+          </div>
+        </div>
+        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+        <div class="time">
+          <span class="timeChange">0.02</span>
+          <span class="timeTotal">3.57</span>
+        </div>
+        <audio id="audio" src=""></audio>
+      </div>
+    </div>
+
+    <!-- Navbar (placed at the bottom of the header image) -->
+    <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small fix__shadown"
+      style="bottom: -16px">
+      <a href="#" class="w3-bar-item w3-button">Trang chủ</a>
+      <a href="#portfolio" class="w3-bar-item w3-button">Ảnh</a>
+    </div>
+  </header>
+
+  <!-- Navbar on small screens -->
+  <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium fix__shadown">
+    <div class="w3-bar w3-light-grey">
+      <a href="#" class="w3-bar-item w3-button">Trang chủ</a>
+      <a href="#portfolio" class="w3-bar-item w3-button">Ảnh</a>
+    </div>
+  </div>
+  <!-- Page content -->
+  <div class="w3-content w3-padding-large w3-margin-top" id="portfolio" style="max-width: 1349px;">
+    <!-- Images (Portfolio) -->
+    <!-- Header -->
+    <div class="w3-opacity">
+      <div class="w3-clear"></div>
+      <header class="w3-center w3-margin-bottom">
+        <h1><b>PHOTOLIO</b></h1>
+        <p><b>Một món quà nhỏ dành cho em ngày 20/10.</b></p>
+        <p>Chúc em và những người phụ nữ trong gia đình của em luôn luôn vui vẻ và hạnh phúc
+          nhé!!</p>
+        <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Hiện viền
+            ảnh nè</button></p>
+      </header>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="w3-row gallery" id="myGrid" style="margin-bottom:128px">
+      <figure class="gallery__item gallery__item--7">
+
+        <img src="/images/linhn.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+
+        <img src="/images/13.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+
+        <img src="/images/test.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--10">
+
+        <img src="/images/t.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+
+        <img src="/w3images/workbench.jpg" style="width:100%">
+      </figure>
+
+      <figure class="gallery__item gallery__item--6">
+
+        <img
+          src="https://kenh14cdn.com/thumb_w/660/2020/8/4/tranhthecanvashouse1060937821345419649181952206451646315382471n-15965356069461650570821.jpg"
+          style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--1">
+        <!--  -->
+        <img src="images/linhn.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+
+        <img src="/images/5.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+
+        <img src="/images/4.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+
+        <img src="/images/6.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--11">
+
+        <img src="/images/7.jpg" style="width:100%">
+      </figure>
+
+      <figure class="gallery__item gallery__item--12">
+
+        <img src="/images/8.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--13">
+
+        <img src="/w3images/workbench.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--14">
+
+        <img src="images/9.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--15">
+
+        <img src="https://i.pinimg.com/originals/5b/00/68/5b006861c9acb719c520450cb7e16c12.jpg"
+          style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--16">
+
+        <img src="images/10.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--17">
+
+        <img src="images/11.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--18">
+
+        <img src="images/11.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--19">
+
+        <img src="images/2.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--20">
+
+        <img src="images/12.jpg" style="width:100%">
+      </figure>
+      <figure class="gallery__item gallery__item--21">
+
+        <img src="images/3.jpg" style="width:100%">
+      </figure>
+    </div>
+
+    <!-- End Page Content -->
+  </div>
+  <div id="img__footer">
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="">
+  </div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
+    style="padding: 0 !important;">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">From a person who always follow you<a
+        href="https://www.instagram.com/tuananh.hoang0912/" target="_blank"
+        class="w3-hover-text-green">&nbsp;<i class="fa fa-heartbeat" style="color: red;"></a></p>
+  </footer>
+
+
+
+  <!-- End page content -->
+  </div>
+</body>
+<script>
+  // Toggle grid padding
+  function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row gallery") {
+      x.className = "w3-row gallery gallery-g-0";
+    } else {
+      x.className = "w3-row gallery";
+    }
+  }
+
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+<script src="./java.js"></script>
+
+</html>
