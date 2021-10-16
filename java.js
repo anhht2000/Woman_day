@@ -47,6 +47,30 @@ const app = {
   config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
   songs: [
     {
+      name: "Chỉ là muốn nói...",
+      singer: "Justin Beiber",
+      path: "./audio/ChiLaMuonNoi1-Khai-6992852.mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg",
+    },
+    {
+      name: "Đông kiếm em",
+      singer: "Justin Beiber",
+      path: "./audio/DongKiemEm-ThaiVu-4373753.mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg",
+    },
+    {
+      name: "Ngàn nỗi nhớ",
+      singer: "Justin Beiber",
+      path: "./audio/NganNoiNho-SOUTHALID-7084100.mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg",
+    },
+    {
+      name: "Chẳng thể tìm được em",
+      singer: "Justin Beiber",
+      path: "./audio/ChangTheTimDuocEm-FreakDReddy-6883435.mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg",
+    },
+    {
       name: "Nếu Ngày Ấy",
       singer: "Justin Beiber",
       path: "./audio/Nếu Ngày Ấy.mp3",
@@ -145,7 +169,7 @@ const app = {
     };
     //lay thoi gian dang chay
     audio.onloadedmetadata = function () {
-      timeTotal.innerText = Math.round((audio.duration / 60) * 100) / 100;
+      timeTotal.innerText = `${String(Math.round((audio.duration / 60) * 100) / 100)}0`.slice(0, 4);
       progress.value = 0;
       timechange.innerText = "0.00";
     };

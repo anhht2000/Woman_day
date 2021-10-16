@@ -7,8 +7,9 @@
 figure {
   margin: 0 !important;
 }
+
 .fix__shadown {
-  box-shadow: 0 0.2rem 0.6rem 0.1rem #ccc;
+  box-shadow: 0 0.2rem 0.6rem 0.1rem #da393e;
 }
 .gallery {
   display: grid;
@@ -229,5 +230,13 @@ figure {
   }
   .width__ne {
     width: 75%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .w3-mobile {
+    padding: 12px 0 !important;
+  }
+  .gallery {
+    grid-gap: 7px;
   }
 }
