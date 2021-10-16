@@ -74,7 +74,7 @@
         <p>Chúc em và những người phụ nữ trong gia đình luôn luôn vui vẻ và và nở những nụ cười đẹp
           nhất nhé!!</p>
         <p class="w3-padding-16"><button class="w3-button w3-black"
-            style="background-color: #DA393E !important;" onclick="myFunction()">Hiện viền
+            style="background-color: #DA393E !important;" id="showFrame">Hiện viền
             ảnh nè</button></p>
       </header>
     </div>
@@ -211,6 +211,7 @@
       x.className = "w3-row gallery";
     }
   }
+  document.querySelector("#showFrame").onclick = myFunction
 
   // Open and close sidebar
   function w3_open() {
