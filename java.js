@@ -1,6 +1,34 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+// Lấy phần Modal
+var modal = document.getElementById("myModal");
+
+// Lấy đường dẫn của hình ảnh và gán vào trong phần Modal
+// var img = document.getElementById("myImg");
+var img = document.querySelectorAll(".myImg");
+var modalImg = document.getElementById("img01");
+console.log("m", img, modal, modalImg);
+
+for (mod in img) {
+  if (img.hasOwnProperty(mod)) {
+    img[mod].style.cursor = "pointer";
+    img[mod].onclick = function (e) {
+      console.log("m", e.target, modal, modalImg);
+      modal.style.display = "flex";
+      modalImg.src = e.target.src;
+    };
+  }
+}
+
+// lấy button span có chức năng đóng Modal
+var span = document.getElementsByClassName("close")[0];
+
+//Khi button được click, đóng modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
 const listAnimation = [
   "animate__bounceInRight",
   "animate__bounceInLeft",
